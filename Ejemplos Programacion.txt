@@ -1,0 +1,86 @@
+-------------------EJEMPLO 1---------------------
+public class Ejemplo1 {
+    public static void main(String[] args){
+        //**Realice un programa que sume, reste y divida 2 numeros ya previamente definidos***
+        int numero_1 = 7;
+        int numero_2 = 6;
+        //OPERACIONES
+        int suma = numero_1 + numero_2;
+        int resta = numero_1 - numero_2;
+        double division = (double) numero_1 / numero_2;
+        //RESULTADOS
+        System.out.println("Resultado de la suma: " + suma);
+        System.out.println("Resultado de la resta: " + resta);
+        System.out.println("Resultado de la división: " + division);
+    }
+}
+
+----------------EJEMPLO 2-------------------------
+public class Ejemplo2 {
+    public static void main(String[] args) {
+        //******Realice un programa de sume y muestre cual es el mayor******.
+        // DEFINICION DE VARIABLES Y CONSTANTES.
+        int numero1 = 10;
+        int numero2 = 15;
+        
+        //Operacion
+        int suma = numero1 + numero2;
+        // Imprimir resultados
+        System.out.println("Resultado de la suma: " + suma);
+        
+        //EL numero1 es mayor al numero?
+        boolean esMayor = numero1 > numero2;
+        System.out.println("El " + numero1 + " es mayor al " + numero2 + "? " + esMayor);
+    }
+}
+
+-----------------EJEMPLO 3-----------------------------------
+public class Ejemplo3 {
+    public static void main(String[] args){
+        //******Realice un programa que muestre la multiplicacion de 2 numeros y diga si ambos numeros son iguales****
+        int numero1 = 22;
+        int numero2 = 25;
+        //Operacion
+        int multiplicacion = numero1 * numero2;
+        // Imprimir resultados
+        System.out.println("Resultado de la Multipliccaion es : " + multiplicacion);
+        
+        // Operadores de igualdad
+        boolean sonIguales = numero1 == numero2;
+        System.out.println("¿Son iguales? " + sonIguales);
+    }
+}
+
+--------------EJEMPLO 4 --------------------------------------
+public class Ejemplo4 {
+    public static void main(String[] args){
+        //***Realice un programa donde compare 2 numeros y compruebe que sea menor o igual, ademas dar un ejemplo de AND con los mismos 2 numeros****
+        int numero3 = 11;
+        int numero4 = 7;
+        boolean esMenorIgual = numero3 <= numero4;
+        System.out.println("¿ " + numero3 + " Es menor o igual a " + numero4 +"? " + esMenorIgual);
+        
+        // Operadores lógicos
+        //Si ambos tienen valor true el resultado de la evaluación será true. 
+        //Con que uno de los dos (o los dos) sea false, el resultado también lo será
+        boolean resultadoAND = (numero3 > 0) && (numero4 < 10);
+        System.out.println("El primer numero es mayor a 0 y el numero 2 es menor que 10");
+        System.out.println("Resultado del operador AND: " + resultadoAND);
+    }
+}
+
+--------------------EJEMPLO 5------------------------------------
+public class Ejemplo5 {
+    public static void main(String[] args){
+        //**Realice un codigo que responda la pregunta si 2 numeros NO son iguales y demostrar el uso del Operador logico OR***
+        int num1 = 6;
+        int num2 = 9;
+        boolean noSonIguales = num1 != num2;
+        System.out.println("¿ " + num1 + " No es igual a  " + num2 +"? " + noSonIguales);
+        //Si al menos uno de los dos tiene valor true el resultado de la evaluación será true. 
+        //Para que el resultado sea false ambos tendrán que serlo. 
+        boolean resultadoOR = (num1 > 7) || (num2 > 10);
+        System.out.println("Resultado del operador OR: " + resultadoOR);
+        
+    }    
+}
